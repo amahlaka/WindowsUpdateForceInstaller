@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+    <ApplicationManifest>app1.manifest</ApplicationManifest>
+    <AssemblyName>UpdateForceInstall</AssemblyName>
+    <RootNamespace>UpdateForceInstall</RootNamespace>
+    <SignAssembly>false</SignAssembly>
+    <DelaySign>false</DelaySign>
+    <AssemblyOriginatorKeyFile>Arttu Mahlakaarto.snk</AssemblyOriginatorKeyFile>
+    <Authors>Arttu Mahlakaarto</Authors>
+    <Description>Used to manually force a reinstall of a windows update that is corrupted or missing</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Version>1.1.0</Version>
+    <PackageReleaseNotes>Initial release version</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Security.Principal.Windows" Version="4.6.0" />
+  </ItemGroup>
+
+</Project>
